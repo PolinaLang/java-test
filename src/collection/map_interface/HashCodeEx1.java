@@ -1,4 +1,4 @@
-//4. Коллекции, lesson 14
+//4. Коллекции, lesson 14-16
 package collection.map_interface;
 
 import java.util.HashMap;
@@ -22,13 +22,21 @@ public class HashCodeEx1 {
         //System.out.println(s1.equals(s4));
         System.out.println(s1.hashCode());
         System.out.println(s2.hashCode());
+
+        for (Map.Entry<Student, Double> entry: map.entrySet()
+             ) {
+            System.out.println(entry.getKey() + ":" + entry.getValue());
+        }
+
+        Map <Integer, String> map2 = new HashMap<>(16, 0.75f);
+
     }
 }
 
-class Student {
-    String name;
-    String surname;
-    int course;
+final class Student implements Comparable<Student>{
+    final String name;
+    final String surname;
+    final int course;
 
     public Student(String name, String surname, int course) {
         this.name = name;
@@ -64,4 +72,9 @@ class Student {
 //    public int hashCode() {
 //        return name.length() * 7 + surname.length() * 11 + course * 53;
 //    }
+
+    @Override
+    public int compareTo(Student o) {
+        return this.name.compareTo(o.name);
+    }
 }
