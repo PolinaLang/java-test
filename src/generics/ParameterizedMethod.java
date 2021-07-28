@@ -8,8 +8,6 @@ public class ParameterizedMethod {
         ArrayList<Integer> all = new ArrayList<>();
         //ArrayList all = new ArrayList(); - как видит код JVM
 
-
-
         all.add(10);
         all.add(20);
         all.add(5);

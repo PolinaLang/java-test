@@ -13,7 +13,7 @@ public class test2 {
         list.add(emp2);
         list.add(emp3);
         System.out.println("Before sorting \n"+ list);
-//        Collections.sort(list);
+        Collections.sort(list);
         Collections.sort(list, new SalaryComparator());
         System.out.println("After sorting \n"+ list);
 
@@ -58,6 +58,7 @@ class Employee implements Comparable<Employee>
         else {
             return 1;
         }
+
         //другой вариант сортировки по id
 //        return this.id - another.id;
 

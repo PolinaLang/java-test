@@ -10,7 +10,16 @@ public class ArrayListMethod5 {
         arrayList1.add("cat");
         arrayList1.add("dog");
         arrayList1.add("bird");
-        System.out.println(arrayList1);
+        System.out.println(arrayList1); //[cat, dog, bird]
+
+        ArrayList<String> arrayList2 = new ArrayList<>();
+        arrayList2.add("cat-2");
+        arrayList2.add("dog");
+        arrayList2.add("bird-2");
+
+//        arrayList1.retainAll(arrayList2);
+        arrayList1.removeAll(arrayList2);
+        System.out.println(arrayList1); //[dog]
 
         //метод of - статичный, изменять объект нельзя
         List<Integer> list1 = List.of(3, 8, 31);
@@ -21,12 +30,12 @@ public class ArrayListMethod5 {
 
         //sublist = view
         List<String> myList = arrayList1.subList(1, 2);
-        System.out.println(myList);
+        System.out.println(myList); //[bird]
         myList.add("mouse");
-        System.out.println(myList);
-        System.out.println(arrayList1);
+        System.out.println(myList); //[bird, mouse]
+        System.out.println(arrayList1); //[cat, bird, mouse]
         arrayList1.add("frog");
-        System.out.println(arrayList1);
+        System.out.println(arrayList1); //[cat, bird, mouse, frog]
 
         Object[] array = arrayList1.toArray();
         String[] array2 = arrayList1.toArray(new String[0]);

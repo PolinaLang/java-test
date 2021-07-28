@@ -10,13 +10,14 @@ public class ArrayListMethod1 {
         arrayList1.add("dog");
         arrayList1.add("bird");
         arrayList1.add(1, "cow");
-//        for (String s : arrayList1
-//             ) {
-//            System.out.println(s);
-//        }
-//        for (int i = 0; i < arrayList1.size(); i++) {
-//            System.out.println(arrayList1.get(i));
-//        }
+        for (String s : arrayList1
+             ) {
+            System.out.println(s);
+        }
+        System.out.println(arrayList1);
+        for (int i = 0; i < arrayList1.size(); i++) {
+            System.out.println(arrayList1.get(i));
+        }
         arrayList1.set(1, "fox");
 
         arrayList1.remove(0);

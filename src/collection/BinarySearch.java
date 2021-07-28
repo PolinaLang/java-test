@@ -17,13 +17,13 @@ public class BinarySearch {
         arrayList.add(-30);
         arrayList.add(-19);
         Collections.sort(arrayList);
-        System.out.println(arrayList);
+        System.out.println(arrayList); //[-30, -19, -8, -3, 0, 1, 5, 8, 10, 12, 150]
         int index = Collections.binarySearch(arrayList, 12);
-        System.out.println(index);
+        System.out.println(index); //9
         Collections.reverse(arrayList);
-        System.out.println(arrayList);
+        System.out.println(arrayList); //[150, 12, 10, 8, 5, 1, 0, -3, -8, -19, -30]
         Collections.shuffle(arrayList);
-        System.out.println(arrayList);
+        System.out.println(arrayList); //[-30, -19, -8, 10, 8, 0, -3, 5, 1, 150, 12]
 
         Employee emp1 = new Employee(100, "Bob", 1000);
         Employee emp2 = new Employee(220, "Alice", 800);
