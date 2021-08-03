@@ -23,15 +23,15 @@ public class TreeMapEx {
         treeMap.put(4.9, s6);
         treeMap.put(8.6, s7);
 
-//        System.out.println(treeMap);
-//        System.out.println(treeMap.get(3.7));
-//        treeMap.remove(5.0);
-//        System.out.println(treeMap);
-//        System.out.println(treeMap.descendingMap());
-//        System.out.println(treeMap.tailMap(5.0));
-//        System.out.println(treeMap.headMap(5.0));
-//        System.out.println(treeMap.lastEntry());
-//        System.out.println(treeMap.firstEntry());
+        System.out.println(treeMap);
+        System.out.println(treeMap.get(3.7));
+        treeMap.remove(5.0);
+        System.out.println(treeMap);
+        System.out.println(treeMap.descendingMap());
+        System.out.println(treeMap.tailMap(5.0));
+        System.out.println(treeMap.headMap(5.0));
+        System.out.println(treeMap.lastEntry());
+        System.out.println(treeMap.firstEntry());
 
         TreeMap<Student, Double> treeMap_2 = new TreeMap<>();
         Student st1 = new Student("Morty", "Smith", 1);

@@ -11,6 +11,8 @@ public class HashMapEx1 {
         map1.put(2569, "Kate Wolf");
         map1.put(6574, "Jack Wolfskin");
         map1.put(8730, "Ann Dawson");
+        //элемент не добавляется, значение перезаписывается
+        map1.put(1000, "Somebody");
         //елемент не добавляется, т.к. такой ключ уже существует
         map1.putIfAbsent(1000, "Person");
 

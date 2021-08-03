@@ -11,8 +11,8 @@ public class HashTable {
         Student s3 = new Student("Jerry", "Smith", 0);
 
         h1.put(7.8, s1);
-        h1.put(1.8, s1);
-        h1.put(6.0, s1);
+        h1.put(1.8, s2);
+        h1.put(6.0, s3);
         System.out.println(h1);
     }
 }
